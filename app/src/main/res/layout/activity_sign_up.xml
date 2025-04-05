@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="24dp"
+    android:gravity="center"
+    android:background="#2196F3">
+
+    <!-- Logo Image -->
+    <ImageView
+        android:id="@+id/logoImage"
+        android:layout_width="258dp"
+        android:layout_height="272dp"
+        android:layout_gravity="center"
+        android:layout_marginBottom="32dp"
+        android:contentDescription="App Logo"
+        android:src="@drawable/logo" />
+
+    <!-- Name Input Field -->
+    <EditText
+        android:id="@+id/editName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Name"
+        android:inputType="text"
+        android:background="@drawable/rounded_input"
+        android:padding="12dp"
+        android:textColor="@android:color/black"
+        android:textColorHint="@color/black"
+        android:layout_marginBottom="16dp"/>
+
+    <!-- Age Input Field -->
+    <EditText
+        android:id="@+id/editAge"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Age"
+        android:inputType="number"
+        android:background="@drawable/rounded_input"
+        android:padding="12dp"
+        android:textColor="@android:color/black"
+        android:textColorHint="@color/black"
+        android:layout_marginBottom="16dp"/>
+
+    <!-- Username Input Field -->
+    <EditText
+        android:id="@+id/editEmail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Email"
+        android:inputType="text"
+        android:background="@drawable/rounded_input"
+        android:padding="12dp"
+        android:textColor="@android:color/black"
+        android:textColorHint="@color/black"
+        android:layout_marginBottom="16dp"/>
+
+    <!-- Password Input Field -->
+    <EditText
+        android:id="@+id/editPassword"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Password"
+        android:inputType="textPassword"
+        android:background="@drawable/rounded_input"
+        android:padding="12dp"
+        android:textColor="@android:color/black"
+        android:textColorHint="@color/black"
+        android:layout_marginBottom="24dp"/>
+
+    <!-- Register Button -->
+    <Button
+        android:id="@+id/btnRegister"
+        android:layout_width="230dp"
+        android:layout_height="57dp"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/gradient_login_button"
+        android:text="Sign Up"
+        android:textColor="@android:color/white" />
+
+</LinearLayout>

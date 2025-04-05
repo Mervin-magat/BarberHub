@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#2196F3"
+    android:padding="16dp">
+
+    <!-- Centered CardView for Floating Effect -->
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="25dp"
+        app:cardElevation="10dp"
+        android:padding="20dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginBottom="20dp"
+        android:layout_centerInParent="true"
+        app:cardBackgroundColor="@android:color/white">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="10dp">
+
+            <!-- Image & Details Side-by-Side -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <!-- Product Image -->
+                <ImageView
+                    android:id="@+id/productImage"
+                    android:layout_width="120dp"
+                    android:layout_height="120dp"
+                    android:layout_marginRight="16dp"
+                    android:background="@drawable/circular_border"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/place" />
+
+                <!-- Product Details -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <EditText
+                        android:id="@+id/editProductName"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/rounded_edittext"
+                        android:hint="Product Name"
+                        android:inputType="text"
+                        android:padding="12dp"
+                        android:textColor="#333333"
+                        android:textSize="16sp" />
+
+                    <EditText
+                        android:id="@+id/editProductPrice"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp"
+                        android:background="@drawable/rounded_edittext"
+                        android:hint="Price"
+                        android:inputType="numberDecimal"
+                        android:padding="12dp"
+                        android:textColor="#333333"
+                        android:textSize="16sp" />
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <!-- Quantity Input -->
+            <EditText
+                android:id="@+id/editProductQuantity"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:background="@drawable/rounded_edittext"
+                android:hint="Quantity"
+                android:inputType="number"
+                android:padding="12dp"
+                android:textColor="#333333"
+                android:textSize="16sp" />
+
+            <!-- Buttons Layout -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/btnUploadImage"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="8dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/rounded_button_bg"
+                    android:padding="12dp"
+                    android:text="Upload"
+                    android:textColor="#FFFFFF"
+                    android:textSize="16sp" />
+
+                <Button
+                    android:id="@+id/btnSaveProduct"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/rounded_button_bg"
+                    android:padding="12dp"
+                    android:text="Save"
+                    android:textColor="#FFFFFF"
+                    android:textSize="16sp" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+</RelativeLayout>
